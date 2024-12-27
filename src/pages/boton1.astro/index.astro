@@ -1,0 +1,219 @@
+
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro"; 
+---
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Servicios</title>  
+    <!-- Incluir Bootstrap desde CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome para los íconos -->
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            height: 100%; 
+        }
+
+        header, footer {  
+            width: 100%;
+        }
+
+        header {
+            background-color: whitesmoke; 
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black; 
+        }
+
+        footer {
+            background-color: whitesmoke; /* Color de fondo del footer */
+            color: white;
+            text-align: center; 
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        footer .footer-left, footer .footer-right {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .footer-left a, footer .footer-right a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        footer .footer-right img {
+            width: 50px; /* Tamaño del logo */
+            height: auto;
+        }
+
+        .services-section {
+            width: 100%;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #822659;
+            border-bottom: 2px solid #822659; 
+            padding-bottom: 10px;
+        }
+
+        .service-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card img {
+            width: 100%;  
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 15px;
+        }
+
+        .service-card .card-body {
+            padding: 16px;
+        }
+
+        .service-card h5 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .service-card button {
+            background-color: #822659;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .service-card button:hover {
+            background-color: #9c3575;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        .col-md-4, .col-sm-6, .col-12 {
+            padding: 0 15px;
+            width: calc(33.333% - 30px);
+        }
+
+        @media (max-width: 768px) {
+            .col-md-4, .col-sm-6, .col-12 {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .col-md-4, .col-sm-6, .col-12 {
+                width: 100%;
+            }
+        }
+    </style>    
+</head>
+<body>
+
+<Header/>
+
+<div class="services-section">
+    <h2>Servicios Bienestar</h2> 
+    <div class="row" id="services-list">
+        <!-- Las tarjetas de los servicios se insertarán aquí -->
+    </div>
+</div>
+
+<Footer/> 
+
+<script>
+    import Yoga from "./yoga.astro";
+    
+    // Actualizamos la interfaz para que description sea opcional y corregimos el tipo de id.
+    interface Service {  
+        id: string;  // Cambiado de number a string
+        name: string;
+        description?: string;  // Cambiado a opcional
+        image: string;
+        price?: string; 
+    }
+    
+    const services = [  
+        { id: "yoga", name: "Hatha Yoga", image: "/public/yoga.webp" },  
+        { id: "facial", name: "Masaje Facial", image: "/public/Bienestar.webp"},  
+        { id: "craneal", name: "Masaje Craneal", image:"/public/masaje craneal.webp" },
+        { id: "armonia", name: "Armonía Ritual", image:"/public/ritual.webp"}, 
+        { id: "masaje", name: "Masaje Metamórfico", image:"/public/masaje.webp" },
+        { id: "relajacion", name: "Masaje de Relajación", image:"/public/camila.webp"},
+        { id: "descontructurante", name: "Masaje Descontracturante", image: "/public/descontracturante.webp" }, 
+        { id: "ventojas", name: "Masaje con Ventosas", image:"/public/masaje con ventosas.webp" },
+        { id: "tuina", name: "Tuī Nà", image: "/public/tuina.webp" },
+        { id: "bambu", name: "Masaje con varas de Bambú", image: "/public/bambu.webp" },
+        { id: "terapeutico", name: "Masaje terapéutico", image: "/public/terapeutico.webp"}, 
+        { id: "piedras", name: "Masaje con Piedras Calientes", image: "/public/masaje caliente.webp"}, 
+        { id: "brazos", name: "Masaje de relajación + descontracturante", image: "/public/relajacion.webp" },
+        { id: "energetico", name: "Masaje Energético", image: "/public/energetico.webp"},  
+        { id: "parejas", name: "Masaje para Parejas", image: "/public/pareja.webp" }, 
+        { id: "adulto", name: "Yoga adulto", image: "/public/yoga adulto.webp"}, 
+        { id: "yoga adulto", name: "Yoga adulto mayor", image: "/public/adulto.webp"}, 
+        { id: "yoga infantil", name: "Yoga infantil", image: "/public/infaltil.webp"}, 
+        { id: "corporal", name: "Masaje Relajante Facial + Corporal", image: "/public/corporal.webp"}, 
+        { id: "reflexiologia", name: "Masaje craneal + Reflexología", image: "/public/reflexologia.webp"},
+        { id: "aliviar", name: "Masaje Relajante + Descontracturante", image: "/public/relajante.webp"}, 
+        { id: "reductivo", name: "Masajes reductivos con Maderoterapia", image: "/public/reductivos.webp"}, 
+    ]; 
+    
+    function createServiceCard(service: Service): string {  
+        return `
+            <div class="col-md-4 col-sm-6 col-12"> 
+                <div class="card service-card">
+                    <img src="${service.image}" class="card-img-top" alt="${service.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${service.name}</h5>
+                        <!-- Aquí cambiamos el onclick para redirigir a la página correspondiente -->
+                        <button onclick="window.location.href ='/boton1.astro/${service.id}'">Más detalles</button> 
+                    </div>
+                </div> 
+            </div>
+        `;
+    }
+    
+    const servicesList = document.getElementById('services-list')!;  
+    services.forEach(service => {
+        servicesList.innerHTML += createServiceCard(service); 
+    });
+    </script>  
+        
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  

@@ -1,0 +1,37 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+<Header/>
+
+<section class="container py-5">   
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Limpieza</span> 
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/chi kung.webp"
+          alt="Bach" 
+          class="img-fluid rounded"  
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong> Qi Gong o Chi Kung </strong></h3>  
+        <p>
+            El Qi Gong o Chi Kung es una técnica de origen oriental que nos ayuda a canalizar nuestra energía dentro de nuestro cuerpo fortaleciendo y reconectando la comunicación entre nuestro corazón y mente 
+        </p>   
+          <li><strong>Terapeuta:</strong> Claudia 
+            <span class="text-danger">4 talleres al mes $20.000</span></li>   
+        </ul>
+      </div>
+    </div>  
+<Footer/> 
+</Layout>

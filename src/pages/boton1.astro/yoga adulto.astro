@@ -1,0 +1,39 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro"; 
+import Layout from "../../layouts/Layout.astro"; 
+---
+<Layout>
+ <Header/>
+
+ <section class="container py-5">
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Bienestar</span>
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/adulto.webp"
+          alt="Adulto" 
+          class="img-fluid rounded" 
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong>Yoga Adulto Mayor</strong></h3>
+        <p>
+         Mediante el yoga en silla para adultos mayores se puede controlar el estrés, descansar de posibles dolencias, así como controlar el equilibrio y la fuerza.
+        </p>
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong> Karla <span class="text-danger">1 práctica $6.000 4 práctica $22.000</span></li> 
+        </ul>
+      </div>
+    </div>  
+
+ <Footer/>
+</Layout>  
+ 

@@ -1,0 +1,37 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+<Header/>
+
+<section class="container py-5">   
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Limpieza</span> 
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/limpieza.png"
+          alt="Bach" 
+          class="img-fluid rounded"  
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong> Limpieza y alineación de Chakras </strong></h3>  
+        <p>
+            Consiste en aprovechar la energía positiva del universo, así como la personal, para desbloquear, purificar y equilibrar la vibración de cada chakra. 
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong> Vanessa
+            <span class="text-danger">$18.000</span></li> 
+        </ul>
+      </div>
+    </div>  
+<Footer/> 
+</Layout>

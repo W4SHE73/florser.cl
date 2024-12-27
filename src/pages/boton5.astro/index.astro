@@ -1,0 +1,152 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/>   
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Servicios <span class="text-warning">Limpieza</span></h2>
+      
+        <div class="row g-4">   
+          <!-- Card 1 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/espalda.webp" class="card-img-top" alt="Masaje Relajante Espalda">
+              <div class="card-body text-center">
+                <h5 class="card-title">Masaje Relajante Espalda</h5>
+                <a href="/masaje/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/sonido.webp" class="card-img-top" alt="Sonoterapia Personal (Terapia de sonido)">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sonoterapia Personal (Terapia de sonido)</h5>
+                <a href="/sonido/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/masaje riki.webp" class="card-img-top" alt="Masaje Descontracturante Espalda">
+              <div class="card-body text-center">
+                <h5 class="card-title">Masaje Descontracturante Espalda</h5>
+                <a href="/espalda descontracturante/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Separador entre filas -->
+        <div class="my-4"></div>
+      
+        <div class="row g-4">
+          <!-- Card 4 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/limpieza.png" class="card-img-top" alt="Limpieza y alineación de Chakras">
+              <div class="card-body text-center">
+                <h5 class="card-title">Limpieza y alineación de Chakras</h5>
+                <a href="/chakras/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>  
+      
+          <!-- Card 5 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/limpieza.png" class="card-img-top" alt="Sanación con cruz Ankh (limpieza energética profunda)">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sanación con cruz Ankh (limpieza energética profunda)</h5>
+                <a href="/cruz/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 6 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/personal.webp" class="card-img-top" alt="Sonoterapia personal + Masaje relajación">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sonoterapia personal + Masaje relajación</h5>
+                <a href="/sonoterapia/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      
+        <!-- Separador entre filas -->
+        <div class="my-4"></div>
+      
+        <div class="row g-4">
+          <!-- Card 7 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/flores de bach.webp" class="card-img-top" alt="Terapia sanación liberación emocional + Flores de Bach">
+              <div class="card-body text-center">
+                <h5 class="card-title">Terapia sanación liberación emocional + Flores de Bach</h5>
+                <a href="/emocional/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div> 
+      
+          <!-- Card 8 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/chi kung.webp" class="card-img-top" alt="Qi Gong o Chi Kung">
+              <div class="card-body text-center">
+                <h5 class="card-title">Qi Gong o Chi Kung</h5>
+                <a href="/kung/" class="btn btn-outline-warning">Más detalles</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+      
+
+    <Footer/> 
+</Layout>   
+<style>
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-outline-warning {
+  border-width: 2px;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 150px;
+  }
+} 
+
+</style>

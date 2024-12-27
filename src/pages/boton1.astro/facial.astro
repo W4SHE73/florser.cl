@@ -1,0 +1,37 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro"; 
+import Layout from "../../layouts/Layout.astro"; 
+---
+<Layout>
+ <Header/>  
+ <section class="container py-5">
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Bienestar</span>
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/bienestar.webp"
+          alt="bienestar" 
+          class="img-fluid rounded"
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong>Masaje Facial</strong></h3>
+        <p>
+            El masaje facial relaja los músculos de la cara, mejora la circulación de la zona, reduce las líneas de expresión, tonifica los músculos y relaja. 
+        </p>
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong>Diego<span class="text-danger">$12.000</span></li> 
+        </ul>
+      </div>
+    </div> 
+ 
+ <Footer/>
+</Layout>  

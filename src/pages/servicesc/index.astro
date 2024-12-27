@@ -1,0 +1,280 @@
+---
+import Header from "../../components/header.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/>
+  </Layout>
+  <head>   
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Florser | Diseño</title>  
+      <link rel="stylesheet" href="styles.css">   
+  </head>   
+  <body>   
+      <section class="main-content">
+          <div id="container-services" class="container-services">
+              <div class="service-item">
+                  <div class="circle">  
+                    <a href="/boton1.astro/" target="_blank">
+                        <img src="/public/bienestar.png" alt="Ícono de bienestar">
+                    </a> 
+                  </div>   
+                  <div class="text">
+                      <h2>Bienestar</h2>  
+                      <p>Estado de equilibrio y armonía que se experimenta a nivel físico, emocional, mental y espiritual. Se refiere a sentirse saludable y feliz en todas las áreas de la vida.</p> 
+                  </div>
+              </div>
+              <div class="service-item">
+                  <div class="circle">
+                    <a href="/boton2.astro/" target="_blank">
+                        <img src="/public/Recurso_Guia.png" alt="Ícono de Guia">
+                    </a>    
+                  </div>   
+                  <div class="text">
+                      <h2>Guía</h2>
+                      <p>Nos ayuda a comprender mejor la naturaleza propia, nuestro potencial espiritual y encontrar el camino hacia una vida más significativa y satisfactoria.</p>
+                  </div>
+              </div>
+              <div class="service-item">
+                  <div class="circle">
+                    <a href="/boton3.astro/" target="_blank"> 
+                      <img src="/public/belleza.png" alt="Ícono de equilibrio">   
+                    </a> 
+                  </div>   
+                  <div class="text">
+                      <h2>Belleza</h2>
+                      <p>Servicios profesionales que se enfocan en mejorar la apariencia física y potenciar el autoestima, a través de terapias holísticas de relajación y cuidado personal.</p>
+                  </div>
+              </div>
+              <div class="service-item">
+                  <div class="circle">
+                    <a href="/boton4.astro/" target="_blank"> 
+                      <img src="/public/Recurso_Sanacion.png" alt="Ícono de energía">  
+                      <a/>   
+                  </div>   
+                  <div class="text">
+                      <h2>Sanación</h2>
+                      <p>Ayudan a la persona a recuperar su equilibrio y bienestar natural, lo que resulta en una mejoría de los síntomas físicos y emocionales, así como en una mejor calidad de vida.</p> 
+                  </div>  
+              </div>
+              <div class="service-item">
+                  <div class="circle">
+                    <a href="/boton5.astro/" target="_blank"> 
+                      <img src="/public/Recurso_Limpieza.png" alt="Ícono de Limpieza"> 
+                      </a>    
+                  </div>   
+                  <div class="text"> 
+                      <h2>Limpieza</h2> 
+                      <p>Proceso de eliminar o purificar la energía negativa no deseada que se ha acumulado en una persona, objeto o lugar.</p>  
+                  </div> 
+              </div>  
+              <div class="service-item">
+                  <div class="circle">
+                      <img src="/public/Tips,png.webp" alt="Ícono de balance">    
+                  </div>   
+                  <div class="text">
+                      <h2>Tips</h2>
+                      <p>Pequeñas recomendaciones sobre meditación, cuidado personal, alimentación, herbolaria, fases de la luna, cristales, entre otros.</p> 
+                  </div>
+              </div>
+          </div>
+      </section> 
+  
+      <footer>
+          <div class="pagination">
+              <span class="dot active" onclick="moveToPage(0)"></span>  
+              <span class="dot" onclick="moveToPage(1)"></span>  
+              <span class="dot" onclick="moveToPage(2)"></span>
+              <span class="dot" onclick="moveToPage(3)"></span>
+              <span class="dot" onclick="moveToPage(4)"></span>
+              <span class="dot" onclick="moveToPage(5)"></span>
+          </div>
+      </footer>
+  
+      <script src="script.js"></script>
+  
+  </body>
+  </html>
+  
+  <style>
+  /* General */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-image: url('/mnt/data/servicios.PNG');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+  } 
+   
+  /* Main content */
+  .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .container-services {
+      display: flex;
+      width: 100%;
+      transform: translateX(0);
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  .service-item {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+  }
+  
+  .circle img {
+      max-width: 80%;
+      height: auto;
+  }
+  
+  .text h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  
+  .text p {
+      font-size: 16px;
+      line-height: 1.6;
+  }
+  /* Main content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column; /* Apilamos texto y dots */
+}
+
+.container-services {
+    display: flex;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Ajusta el espacio interno */
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.circle img {
+    max-width: 80%;
+    height: auto;
+}
+
+.text {
+    max-width: 600px; /* Ajusta el ancho del texto */
+}
+
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Footer (Pagination) */
+footer {
+    margin-top: 20px; /* Espaciado entre texto y dots */
+}
+
+footer .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .dot.active {
+    background-color: #ff6600;
+}
+  </style>  
+  
+  <script> 
+    let currentIndex: number = 0;
+    const services: NodeListOf<Element> = document.querySelectorAll('.service-item');
+    const paginationDots: NodeListOf<Element> = document.querySelectorAll('.dot');
+    
+    function showService(index: number): void {
+        const container = document.getElementById('container-services');
+        if (container) {
+            container.style.transform = `translateX(-${index * 100}%)`;
+        }
+        paginationDots.forEach(dot => dot.classList.remove('active'));
+        paginationDots[index].classList.add('active'); 
+    }
+    
+    function moveToPage(index: number): void {
+        currentIndex = index;
+        showService(currentIndex);
+    }
+    
+    function autoRotate(): void {
+        currentIndex = (currentIndex + 1) % services.length;
+        showService(currentIndex);
+    }
+    
+    setInterval(autoRotate, 3000); 
+  </script>  
+  

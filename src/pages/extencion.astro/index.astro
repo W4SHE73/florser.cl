@@ -1,0 +1,40 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/>
+
+
+    <section class="container py-5">
+        <h2 class="text-center">
+          Servicios <span class="text-danger">belleza</span>
+        </h2>
+        <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+    
+        <div class="row align-items-center shadow p-4 rounded bg-white">
+          <!-- Imagen -->
+          <div class="col-md-6">
+            <img 
+              src="/public/uñas.webp"
+              alt="Limpieza" 
+              class="img-fluid rounded"  
+            />
+          </div> 
+    
+          <!-- Contenido -->
+          <div class="col-md-6">
+            <h3 class="text-dark"><strong>Extensión de uñas polygel</strong></h3>
+            <p>
+                Es polygel es una fórmula de construcción de uñas que podría considerarse un sistema híbrido, ya que tiene lo mejor del acrílico en lo que a resistencia y durabilidad se refiere y los sistemas de gel. El resultado, unas uñas más fuertes y, por tanto, menos quebradizas, pero a la vez ligeras y duraderas. 
+            </p>
+            <ul class="list-unstyled">
+              <li><strong>Terapeuta:</strong> Maricela <span class="text-danger"> $25.000</span></li> 
+            </ul>
+          </div>
+        </div>
+    </section> 
+
+    <Footer/> 
+</Layout>  

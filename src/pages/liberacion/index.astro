@@ -1,0 +1,37 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/> 
+
+    <section class="container py-5">  
+        <h2 class="text-center">
+          Servicios <span class="text-danger">Sanacion</span>
+        </h2>
+        <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+    
+        <div class="row align-items-center shadow p-4 rounded bg-white">
+          <!-- Imagen -->
+          <div class="col-md-6">  
+            <img 
+              src="/public/familia.webp"
+              alt="Sanacion" 
+              class="img-fluid rounded" />
+          </div> 
+    
+          <!-- Contenido -->
+          <div class="col-md-6"> 
+            <h3 class="text-dark"><strong>Sanación de niño interior + Sanación de linajes madre y padre</strong></h3>
+            <p> 
+             Es una reconciliación energética de linajes y de uno mismo que permite que el individuo cree su propia realidad, se libere de cargas que no le corresponden y obtenga la sanación del propio ser y la evolución del alma.
+            </p>
+            <ul class="list-unstyled">
+              <li><strong>Terapeuta:</strong> Joseline <span class="text-danger"> $20.000 </span></li>  
+            </ul>
+          </div>
+        </div>  
+
+    <Footer/> 
+</Layout>  

@@ -1,0 +1,43 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro"; 
+import Layout from "../../layouts/Layout.astro"; 
+---
+<Layout>
+ <Header/> 
+ 
+ <section class="container py-5">
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Bienestar</span>
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/masaje caliente.webp"
+          alt="Piedras" 
+          class="img-fluid rounded"
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong>Masaje con Piedras Calientes</strong></h3>
+        <p>
+            (Zona de la espalda, manos y brazos) se empieza con masaje localizado luego piedras calientes y se termina con masaje en las zonas nombradas.
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong>Claudia<span class="text-danger">$25.000</span></li> 
+          <li><strong>Terapeuta:</strong>Camila<span class="text-danger">$25.000</span></li> 
+        </ul>
+      </div>
+    </div>  
+
+
+
+
+
+ <Footer/>
+</Layout>   
+  

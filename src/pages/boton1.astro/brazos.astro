@@ -1,0 +1,40 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro"; 
+import Layout from "../../layouts/Layout.astro"; 
+---
+<Layout>
+ <Header/> 
+ 
+ <section class="container py-5">
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Bienestar</span>
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/relajacion.webp"  
+          alt="descontracturante" 
+          class="img-fluid rounded"
+        />
+      </div>  
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong>Masaje de relajación + descontracturante</strong></h3> 
+        <p>
+            (Cuerpo completo, espalda, brazos, piernas y pies). 45 min a 1 hora aproximadamente.
+        </p>
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong>Camila<span class="text-danger">$28.000</span></li> 
+        </ul>
+      </div>
+    </div> 
+
+
+
+ <Footer/>
+</Layout>  

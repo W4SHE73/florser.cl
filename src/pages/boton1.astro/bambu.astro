@@ -1,0 +1,38 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro"; 
+import Layout from "../../layouts/Layout.astro"; 
+---
+<Layout>
+ <Header/>  
+ 
+ <section class="container py-5">
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Bienestar</span>
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/bambu.webp"
+          alt="bambu" 
+          class="img-fluid rounded"
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong>Masaje con varas de Bambú</strong></h3>
+        <p>
+            El masaje con cañas de bambú o bambuterapia es un novedoso tratamiento corporal de relajación muscular que estimula la piel, músculos, tejido adiposo y sistema nervioso gracias a la acción de diferentes cañas de bambú aplicadas en la zona a tratar.
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong>Claudia<span class="text-danger">$25.000</span></li> 
+        </ul>
+      </div>
+    </div>  
+
+
+ <Footer/>
+</Layout>  

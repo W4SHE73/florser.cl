@@ -1,0 +1,49 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/> 
+
+<section class="container py-5">
+    <h2 class="text-center mb-4">Servicios <span class="text-warning">Guía</span></h2>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="/public/psicologo.webp" class="card-img-top" alt="Psicóloga Infantil">
+          <div class="card-body text-center">
+            <h5 class="card-title">Psicóloga Infantil</h5>
+            <a href="/psicologo.astro/" class="btn btn-outline-warning">Más detalles</a> 
+          </div>
+        </div> 
+      </div> 
+  
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="/public/registros.webp" class="card-img-top" alt="Terapia registros Akáshicos">
+          <div class="card-body text-center">
+            <h5 class="card-title">Terapia registros Akáshicos</h5>
+            <a href="/terapia registros.astro/" class="btn btn-outline-warning">Más detalles</a> 
+          </div>
+        </div>
+      </div> 
+  
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="/public/sanadora.webp" class="card-img-top" alt="Terapia de regresión sanadora">
+          <div class="card-body text-center">
+            <h5 class="card-title">Terapia de regresión sanadora</h5>
+            <a href="/terapia sanadora.astro/" class="btn btn-outline-warning">Más detalles</a>
+          </div>
+        </div>   
+      </div> 
+    </div>
+  </section>
+
+  <Footer/> 
+
+</Layout>  

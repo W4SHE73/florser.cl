@@ -1,0 +1,38 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro"; 
+import Layout from "../../layouts/Layout.astro"; 
+---
+<Layout>
+ <Header/> 
+ 
+ <section class="container py-5">
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Bienestar</span>
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/masaje craneal.webp"
+          alt="masaje craneal" 
+          class="img-fluid rounded"
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong>Masaje Craneal</strong></h3> 
+        <p>
+        El masaje craneal se aplica en el cráneo, la cara, el cuello y los hombros y está especialmente dirigido a reducir la tensión de estas zonas y eliminar el dolor y las molestias que ésta puede causar. (30 a 35 min)
+        </p>
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong>Camila<span class="text-danger">$15.000</span></li> 
+        </ul>
+      </div>
+    </div> 
+
+ <Footer/>
+</Layout>  

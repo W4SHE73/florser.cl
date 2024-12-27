@@ -1,0 +1,162 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/> 
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Servicios <span class="text-warning">Sanación</span></h2>
+        
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/emocional.webp" class="card-img-top" alt="Masaje Relajante Espalda">
+              <div class="card-body text-center">
+                <h5 class="card-title">Masaje Relajante Espalda</h5>
+                <a href="/masaje.astro/" class="btn btn-outline-warning">Más detalles</a> 
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/bach.webp" class="card-img-top" alt="Sonoterapia Personal (Terapia de sonido)">
+              <div class="card-body text-center">
+                <h5 class="card-title">Flores de Bach</h5>
+                <a href="/sonoterapia.astro/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>   
+      
+          <!-- Card 3 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/biomagnetismo.webp" class="card-img-top" alt="Masaje Descontracturante Espalda">
+              <div class="card-body text-center">
+                <h5 class="card-title">Masaje Descontracturante Espalda</h5>
+                <a href="/sonoterapia.astro/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 4 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/podal.webp" class="card-img-top" alt="Limpieza y alineación de Chakras">
+              <div class="card-body text-center">
+                <h5 class="card-title">Limpieza y alineación de Chakras</h5>
+                <a href="/sanacion/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>  
+      
+          <!-- Card 5 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/usui.webp" class="card-img-top" alt="Sonoterapia personal + Masaje relajación">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sonoterapia personal + Masaje relajación</h5>
+                <a href="/personal/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 6 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/sonoterapia.webp" class="card-img-top" alt="Reiki + Aromaterapia y Sonoterapia">
+              <div class="card-body text-center">
+                <h5 class="card-title">Reiki + Aromaterapia y Sonoterapia</h5>
+                <a href="/Reiki.astro/" class="btn btn-outline-warning">Más detalles</a> 
+              </div>
+            </div>
+          </div>  
+      
+          <!-- Card 7 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/familia.webp" class="card-img-top" alt="Terapia sanación liberación emocional + Flores de Bach">
+              <div class="card-body text-center">
+                <h5 class="card-title">Terapia sanación liberación emocional + Flores de Bach</h5>
+                <a href="/liberacion/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div> 
+      
+          <!-- Card 8 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/cristales.webp" class="card-img-top" alt="Reiki con gemoterapia">
+              <div class="card-body text-center">
+                <h5 class="card-title">Reiki con gemoterapia</h5>
+                <a href="/gemoterapia/" class="btn btn-outline-warning">Más detalles</a> 
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 9 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/auriculo.webp" class="card-img-top" alt="Auriculoterapia">
+              <div class="card-body text-center">
+                <h5 class="card-title">Auriculoterapia</h5>
+                <a href="/auriculoterapia/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 10 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/rehabilitacion.webp" class="card-img-top" alt="Terapia de Rehabilitación">
+              <div class="card-body text-center">
+                <h5 class="card-title">Terapia de Rehabilitación</h5>
+                <a href="/rehabilitacion/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+      
+    <Footer/> 
+</Layout>   
+<style>
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f8f9fa;   
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-outline-warning {
+  border-width: 2px;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 150px;
+  }
+} 
+
+</style>

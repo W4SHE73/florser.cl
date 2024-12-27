@@ -1,0 +1,41 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+<Header/>
+
+<section class="container py-5">   
+    <h2 class="text-center">
+      Servicios <span class="text-danger">Limpieza</span> 
+    </h2>
+    <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+
+    <div class="row align-items-center shadow p-4 rounded bg-white">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img 
+          src="/public/sonido.webp"
+          alt="Bach" 
+          class="img-fluid rounded"  
+        />
+      </div> 
+
+      <!-- Contenido -->
+      <div class="col-md-6">
+        <h3 class="text-dark"><strong> Sonoterapia Personal (Terapia de sonido) </strong></h3>  
+        <p>
+            Utilización de las vibraciones del sonido más el poder de nuestra intención aportamos al reconocimiento auto sanador de cada ser.
+        <ul class="list-unstyled">
+          <li><strong>Terapeuta:</strong> Diego <span class="text-danger">$15.000 (30 min)</span></li> 
+          <li><strong></strong> Maricela <span class="text-danger">$22.000</span></li> 
+          
+        </ul>
+      </div>
+    </div> 
+
+
+
+<Footer/> 
+</Layout>

@@ -1,0 +1,48 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/>
+
+
+    <section class="container py-5">
+        <h2 class="text-center">
+          Servicios <span class="text-danger">belleza</span>
+        </h2>
+        <hr class="mx-auto my-3" style="width: 80%; height: 2px; background-color: #800020;" />
+    
+        <div class="row align-items-center shadow p-4 rounded bg-white">
+          <!-- Imagen -->
+          <div class="col-md-6">
+            <img 
+              src="/public/tatuaje.webp"
+              alt="Limpieza" 
+              class="img-fluid rounded"  
+            />
+          </div> 
+    
+          <!-- Contenido -->
+          <div class="col-md-6">
+            <h3 class="text-dark"><strong>Tatuaje punto a punto</strong></h3>
+            <p>
+                La técnica requiere nada más –ni nada menos– que una mano hábil, una aguja y pigmento. Es una técnica que se recomienda para tatuajes pequeños por el tiempo que lleva. El resultado es similar al del puntillismo. -Previa evaluación del diseño- 
+            </p>
+            <ul class="list-unstyled">
+              <li><strong>Terapeuta:</strong> Nathaly <span class="text-danger">Desde $20.000</span></li> 
+            </ul>
+          </div>
+        </div> 
+
+
+
+
+
+
+
+
+
+
+    <Footer/> 
+</Layout>  

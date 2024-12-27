@@ -1,0 +1,165 @@
+<footer>
+    <div class="footer-container">
+        <div class="logo">
+            <a href="#">  
+                <img src="/public/florser.webp" alt="Logo Florser" id="logo">
+            </a>
+        </div>
+        <div class="footer-options">
+            <a href="https://www.instagram.com/centroflorser/" class="social-link">
+                <img src="/public/INSTAGRAM_material.webp" alt="Florser Instagram" id="logo-instagram">
+            </a>
+            <nav>
+                <ul>   
+                    <li><a href="tel:+56987640509" class="contact-link">+569 87640509</a></li>  
+                    <li><a href="https://goo.gl/maps/8NkDjMZYayZHpU2e7" class="contact-link">Michimalongo #526, La Calera</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </div>
+</footer>    
+
+<style>  
+/* General reset for margin, padding, and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;  
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 2vw 0; /* Space at top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    z-index: 1;
+}
+
+/* Footer container to hold all elements */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 10px;
+    flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+}
+
+/* Logo styles */
+.logo {
+    flex: 1; /* Allow the logo to take available space */
+    display: flex;
+    justify-content: flex-start; /* Align logo to the left */
+}
+
+.logo img {
+    max-height: 2.5vw; /* Make the logo smaller for better responsiveness */
+}
+
+/* Footer options (social links and contact) */
+.footer-options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1; /* Allow footer options to take available space */
+    margin-top: 1vw; /* Add some space on top for better alignment */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+/* Instagram link style */
+.footer-options a {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+#logo-instagram {
+    max-height: 3.5vw; /* Instagram logo size */
+    transition: transform 0.3s ease;
+}
+
+#logo-instagram:hover {
+    transform: scale(1.1); /* Hover effect for Instagram icon */
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Contact link style */
+.contact-link {
+    font-size: 1.2vw;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #f56b2a; /* Accent color on hover */
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack logo and footer options */
+        align-items: center; /* Center content */
+    }
+
+    .logo img {
+        max-height: 8vw; /* Larger logo size on smaller screens */
+    }
+
+    .footer-options {
+        justify-content: center; /* Center the footer options on smaller screens */
+        margin-top: 1.5vw; /* Add more space for smaller screens */
+    }
+
+    nav ul {
+        justify-content: center; /* Center the contact links */
+        gap: 5vw; /* More space between links for small screens */
+    }
+
+    .contact-link {
+        font-size: 4vw; /* Larger text for small screens */
+    }
+}
+
+/* Additional Responsiveness for extra small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+    footer {
+        padding: 5vw 0; /* Adjust padding for very small screens */
+    }
+
+    .footer-container {
+        width: 95%; /* Allow more space for small screens */
+    }
+
+    .logo img {
+        max-height: 10vw; /* Make logo larger on very small screens */
+    }
+
+    .footer-options {
+        flex-direction: column; /* Stack the options vertically */
+        align-items: center; /* Center content */
+    }
+
+    nav ul {
+        gap: 6vw; /* More gap between links */
+    }
+
+    .contact-link {
+        font-size: 5vw; /* Even larger font size for ultra-small screens */
+    }
+}
+</style>

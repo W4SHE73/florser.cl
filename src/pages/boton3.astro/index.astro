@@ -1,0 +1,121 @@
+---
+import Header from "../../components/header.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <Header/>  
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Servicios <span class="text-warning">Belleza</span></h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/facial.png" class="card-img-top" alt="Limpieza Facial">
+              <div class="card-body text-center">
+                <h5 class="card-title">Limpieza Facial</h5>
+                <a href="/limpieza facial.astro/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/kapping.webp" class="card-img-top" alt="Kapping florser">
+              <div class="card-body text-center">
+                <h5 class="card-title">Kapping</h5>
+                <a href="/kapping.astro/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/tatuaje.webp" class="card-img-top" alt="Tatuaje punto a punto">
+              <div class="card-body text-center">
+                <h5 class="card-title">Tatuaje punto a punto</h5>
+                <a href="/tatuaje.astro/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Separador entre filas -->
+        <div class="my-4"></div>
+      
+        <div class="row g-4">
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/uñas.webp" class="card-img-top" alt="Extensión de uñas polygel">
+              <div class="card-body text-center">
+                <h5 class="card-title">Extensión de uñas polygel</h5>
+                <a href="/extencion.astro/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/care.webp" class="card-img-top" alt="Skin Care">
+              <div class="card-body text-center">
+                <h5 class="card-title">Skin Care</h5>
+                <a href="/care.astro/" class="btn btn-outline-warning">Más detalles</a>
+              </div>
+            </div>
+          </div>  
+      
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="card shadow border-0 h-100">
+              <img src="/public/spa facial.webp" class="card-img-top" alt="Spa Facial">
+              <div class="card-body text-center">
+                <h5 class="card-title">Spa Facial</h5>
+                <a href="/spa facial/"class="btn btn-outline-warning">Más detalles</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
+      
+
+    <Footer/> 
+</Layout>  
+
+<style>
+/* Línea amarilla debajo del título */
+h2.position-relative .linea-amarilla {
+  display: block;
+  width: 120px;
+  height: 4px;
+  background-color: #ffc107;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+/* Ajustes generales de las tarjetas */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn-outline-warning {
+  border-width: 2px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem; 
+}
+
+</style>
